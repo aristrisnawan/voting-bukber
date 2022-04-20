@@ -8,7 +8,7 @@ export default function VotingComponent() {
   const onSubmit = (data, e) => {
     e.target.reset();
     axios.post(`${Url}/voting`, data).then((res) => {
-      alert("succes");
+      alert("Terimakasih Atas Partisipasinya flen 😀");
       window.location.reload();
     });
   };
