@@ -50,7 +50,7 @@ export default function ResultComponent() {
     });
   }, []);
   useEffect(() => {
-    axios.get(`${Url}/voting/count?place=Alam%sunda`).then((res) => {
+    axios.get(`${Url}/voting/count?place=Alam%20sunda`).then((res) => {
       const total = res.data;
       setAls(total);
     });
@@ -68,19 +68,19 @@ export default function ResultComponent() {
     });
   }, []);
   useEffect(() => {
-    axios.get(`${Url}/voting/count?place=Kafetaria%sunda`).then((res) => {
+    axios.get(`${Url}/voting/count?place=Kafetaria%20sunda`).then((res) => {
       const total = res.data;
       setKs(total);
     });
   }, []);
   useEffect(() => {
-    axios.get(`${Url}/voting/count?place=Lumbung%padi`).then((res) => {
+    axios.get(`${Url}/voting/count?place=Lumbung%20padi`).then((res) => {
       const total = res.data;
       setLp(total);
     });
   }, []);
   useEffect(() => {
-    axios.get(`${Url}/voting/count?place=Racik%desa`).then((res) => {
+    axios.get(`${Url}/voting/count?place=Racik%20desa`).then((res) => {
       const total = res.data;
       setRd(total);
     });
@@ -92,19 +92,19 @@ export default function ResultComponent() {
     });
   }, []);
   useEffect(() => {
-    axios.get(`${Url}/voting/count?place=muara%sunda`).then((res) => {
+    axios.get(`${Url}/voting/count?place=muara%20sunda`).then((res) => {
       const total = res.data;
       setMs(total);
     });
   }, []);
   useEffect(() => {
-    axios.get(`${Url}/voting/count?place=sanding%resto`).then((res) => {
+    axios.get(`${Url}/voting/count?place=sanding%20resto`).then((res) => {
       const total = res.data;
       setSr(total);
     });
   }, []);
   useEffect(() => {
-    axios.get(`${Url}/voting/count?place=Cibiuk%Lewigoong`).then((res) => {
+    axios.get(`${Url}/voting/count?place=Cibiuk%20Lewigoong`).then((res) => {
       const total = res.data;
       setCl(total);
     });
@@ -122,7 +122,7 @@ export default function ResultComponent() {
         <li>Sugema : {sugema.count}</li>
         <li>Salagedang : {slg.count}</li>
         <li>Kafetaria Sunda : {ks.count}</li>
-        <li>Lumbung Pada : {lp.count}</li>
+        <li>Lumbung Padi : {lp.count}</li>
         <li>Racik Desa : {rd.count}</li>
         <li>Kejora : {kejora.count}</li>
         <li>Muara Sunda : {ms.count}</li>
